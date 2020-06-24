@@ -16,12 +16,25 @@ import Foundation
 /// 3. gender: String
 
 //struct ...
+struct Student {
+    var name: String
+    var track: String
+    var gender: String
+    // 2
+    func imageName() -> String {
+        if gender == "boy" {
+            return "boyProfileImage"
+        }
+        else {
+            return "girlProfileImage"
+        }
+    }
+}
 
 
 
 
-
-// MARK:  2️⃣ قم بإنشاء دالة بداخل الهيكل باسم imageName()
+// MARK:  2️⃣ قم بإنشاء دالة بداخل الهيكل باسم imageName
 /**
 لدينا صور في داخل مجل `Assets.xcassets`
  - هناك صورة  لولد باسم `boyProfileImage`
@@ -50,12 +63,12 @@ import Foundation
 
 // كتبنالك ياها عشان لا تقول (مووعاريف أكتب مصفوففة وااااع 😭)
 // امسح الكود واكتبه بطريقتك المبدعة 😍
-//var students: [Student] =
-//    [
-//        Student(...
-//        Student(...
-//        Student(...
-//    ]
+var students: [Student] =
+    [
+        Student(name: "صالح شهاب", track: "iOS", gender: "boy"),
+        Student(name: "ريم خالد", track: "Android", gender: "girl"),
+        Student(name: "محمد علي", track: "Web", gender: "boy")
+   ]
 
 
 
